@@ -28,6 +28,12 @@ foreach (var good in result)
 }
 Console.WriteLine();
 
+var result2 = preservers.FirstOrDefault(p => p.Name == "Meat_30");
+if (result2 is null)
+{
+    Console.WriteLine("ERROR");
+}
+
 return;
 
 void RandomFill(List<CannedMeat> list)
